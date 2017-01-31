@@ -78,11 +78,11 @@ public class CrossZeroMainClass {
         for(int i=0,k=0,m=1;i<gameField.length;i++){
             for (int j=0;j<gameField.length;j++){
                 if (i==0){
-                    gameField[i][j]=Integer.toString(k).charAt(0); //вопрос к Ивану . почему если конвертировать явно (char)k то в консоли отображаться этот символ не будет?
+                    gameField[i][j]=Integer.toString(k).charAt(0); 
                     k++;
                 }else {
                     if (j==0){
-                        gameField[i][j]=Integer.toString(m).charAt(0);//аналогично строке 32
+                        gameField[i][j]=Integer.toString(m).charAt(0);
                         m++;
                     }else {
                         gameField[i][j]=emptyDot;
